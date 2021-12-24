@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accourse</title>
     <style>
-        #header{
+        /* ini buat reset setingan padding sama margin soalnya di awal udh ada setingannya mangkanya ga fit selayar */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Sebisa mungkin jangan kasih css di id soalnya klo id cuma bisa di pke sekali klo di class bisa dipke berkali kali kalo namanya sama */
+        #header {
             background-color: rgb(0, 153, 255);
-            margin: -10px;
-            padding: 0px;
-            overflow: hidden;
-            position: fixed;
-            top: 0;
+            /* margin: -10px;
+            padding: 0px; */
+            /* overflow: hidden; */
+            /* position: fixed;
+            top: 0; */
             width: 100%;
             height: 85px;
         }
+
         /* nav {
             background-color: rgb(0, 153, 255);
             margin: -10px;
@@ -26,6 +35,17 @@
             width: 100%;
             height: 85px;
         } */
+
+        /* sebisa mungkin klo mau main position yang di kasih positionnya pembungkusnya jangan isinya biar semua yang di pembungkus nerima efeknya */
+        .nav {
+            position: sticky;
+            top: 0;
+        }
+
+        section {
+            margin-left: 20px;
+        }
+
         nav ul {
             margin: 0px;
             padding: 0px;
@@ -33,13 +53,16 @@
             list-style: none;
             align-items: center;
         }
-        nav li {
+
+        /* nav li {
             position: relative;
-        }
-        nav ul > li {
+        } */
+
+        nav ul>li {
             white-space: nowrap;
             padding: 0px 20px;
         }
+
         nav h1 {
             color: white;
             font-size: 34px;
@@ -47,6 +70,7 @@
             margin-right: 200px;
             white-space: nowrap;
         }
+
         nav a {
             color: white;
             text-decoration: none;
@@ -55,7 +79,8 @@
             margin-top: 10px;
             white-space: nowrap;
         }
-        nav .btn-get-started{
+
+        nav .btn-get-started {
             margin: 0px 0px 5px 20px;
             padding: 10px 15px;
             text-transform: uppercase;
@@ -67,36 +92,94 @@
             color: #fff;
             background: #3ff309;
         }
+
+        .layout {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .layout-item {
+            margin-right: 50px;
+        }
     </style>
 </head>
+
 <body>
 
-    <header id="header" class="d-flex align-items-center">
-        <div class="container d-flex align-items-center justify-content-between">
+    <!-- awal navbar -->
+    <header id="header" class="nav">
         <nav>
             <ul>
-                <li><h1>Accourse</h1></li>
-                <li><a class="nav-link scrollto active" href="#home">Home</li>
-                <li><a class="nav-link scrollto" href="#course">Courses</li>
-                <li><a class="nav-link scrollto" href="#article">Articles</li>
-                <li><a class="nav-link scrollto" href="#testi">Testimony</li>
-                <li><a class="nav-link scrollto" href="#pricing">Pricing</li>
-                <li><a class="nav-link scrollto" href="#contact">Contact</li>
-                <a href="login.html" class="btn-get-started scrollto">Get Started!</a>
+                <li>
+                    <h1>Accourse</h1>
+                </li>
+                <li>
+                    <a href="#home">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#course">
+                        Courses
+                    </a>
+                </li>
+                <li>
+                    <a href="#article">
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#testi">
+                        Testimony
+                    </a>
+                </li>
+                <li>
+                    <a href="#pricing">
+                        Pricing
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        Contact
+                    </a>
+                </li>
+                <a href="login.html" class="btn-get-started">
+                    Get Started!
+                </a>
             </ul>
         </nav>
-        </div>
     </header>
+    <!-- akhir navbar -->
 
-
+    <!-- awal konten -->
     <section id="home" class="home">
         <div class="container" data-aos="zoom-out" data-aos-delay="100">
             <h1>This Is Home Page</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique itaque ipsa, dolor a qui perferendis possimus maxime tempora ea fugit vitae explicabo eos amet aspernatur illo. Necessitatibus porro odit pariatur?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique itaque ipsa, dolor a qui perferendis possimus maxime tempora ea fugit vitae explicabo eos amet aspernatur illo. Necessitatibus porro odit pariatur?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique itaque ipsa, dolor a qui perferendis possimus maxime tempora ea fugit vitae explicabo eos amet aspernatur illo. Necessitatibus porro odit pariatur?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique itaque ipsa, dolor a qui perferendis possimus maxime tempora ea fugit vitae explicabo eos amet aspernatur illo. Necessitatibus porro odit pariatur?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique itaque ipsa, dolor a qui perferendis possimus maxime tempora ea fugit vitae explicabo eos amet aspernatur illo. Necessitatibus porro odit pariatur?</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium veniam quam provident ipsa neque
+                corporis dignissimos tempore hic voluptate porro quo magni inventore voluptas, consequuntur fugit, nihil
+                ullam, quisquam suscipit.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium veniam quam provident ipsa neque
+                corporis dignissimos tempore hic voluptate porro quo magni inventore voluptas, consequuntur fugit, nihil
+                ullam, quisquam suscipit.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium veniam quam provident ipsa neque
+                corporis dignissimos tempore hic voluptate porro quo magni inventore voluptas, consequuntur fugit, nihil
+                ullam, quisquam suscipit.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium veniam quam provident ipsa neque
+                corporis dignissimos tempore hic voluptate porro quo magni inventore voluptas, consequuntur fugit, nihil
+                ullam, quisquam suscipit.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium veniam quam provident ipsa neque
+                corporis dignissimos tempore hic voluptate porro quo magni inventore voluptas, consequuntur fugit, nihil
+                ullam, quisquam suscipit.
+            </p>
         </div>
     </section>
 
@@ -104,38 +187,37 @@
     <section id="course" class="course">
         <div class="container" data-aos="zoom-out" data-aos-delay="100">
             <h1>This Is Course Page</h1>
-            <div class="row">
-
-                <div class="col-md-6 col-lg-3 d-flex align-items-center" data-aos="zoom-out">
+            <div class="layout">
+                <div class="layout-item" data-aos="zoom-out">
                     <h4 class="title">Pengantar Akuntansi</h4>
-                    <img src="assets/img/pengantar_ak.jpg" alt="" width="200" height="150">
+                    <img src="pengantar_ak.jpg" alt="" width="200" height="150">
                 </div>
-
-
-                <div class="col-md-6 col-lg-3 d-flex align-items-center" data-aos="zoom-out">
+                <div class="layout-item" data-aos="zoom-out">
                     <h4 class="title">Akuntansi Keuangan</h4>
-                    <img src="assets/img/akm.jpg" alt="" width="200" height="150">
+                    <img src="akm.jpg" alt="" width="200" height="150">
                 </div>
 
-                <div class="col-md-6 col-lg-3 d-flex align-items-center" data-aos="zoom-out">
+                <div class="layout-item" data-aos="zoom-out">
                     <h4 class="title">Akuntansi Biaya</h4>
-                    <img src="assets/img/akbi.jpg" alt="" width="200" height="150">
+                    <img src="akbi.jpg" alt="" width="200" height="150">
                 </div>
 
-                <div class="col-md-6 col-lg-3 d-flex align-items-center" data-aos="zoom-out">
+                <div class="layout-item" data-aos="zoom-out">
                     <h4 class="title">Akuntansi Pajak</h4>
-                    <img src="assets/img/tax.png" alt="" width="200" height="150">
+                    <img src="tax.png" alt="" width="200" height="150">
                 </div>
             </div>
         </div>
     </section>
-    
+    <!-- akhir konten -->
+
+    <!-- awal footer -->
     <section id="article" class="article">
         <div class="container" data-aos="zoom-out" data-aos-delay="100">
             <h1>Read Artticle Here!</h1>
         </div>
     </section>
-    
+
     <section id="testi" class="testi">
         <div class="container" data-aos="zoom-out" data-aos-delay="100">
             <h1>This Is Course Page</h1>
@@ -147,13 +229,14 @@
             <h1>This Is Course Page</h1>
         </div>
     </section>
-    
+
     <section id="course" class="course">
         <div class="container" data-aos="zoom-out" data-aos-delay="100">
             <h1>This Is Course Page</h1>
         </div>
     </section>
-    
-    
+    <!-- akhir footer -->
+
 </body>
+
 </html>
