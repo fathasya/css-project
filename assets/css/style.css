@@ -1,0 +1,332 @@
+/* --------------------------------------
+# General
+-----------------------------------------*/
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Georgia, Times, serif;
+    color: black;
+}
+
+section{
+    margin-left: 15px;
+}
+
+h4 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: white;
+}
+
+#main{
+    color: black;
+    margin: 20px;
+}
+
+.text-end{
+    text-align: right;
+}
+
+.title{
+    margin: 90px 0px 20px;
+    padding: 8px 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: whitesmoke;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+/* --------------------------------------
+# Header 
+-----------------------------------------*/
+
+header{
+    background-color: rgb(0, 153, 255);
+    width: 100%;
+    height: 85px;
+}
+
+/* --------------------------------------
+# Navbar
+-----------------------------------------*/
+nav {
+    background-color: rgb(0, 153, 255);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+}
+
+nav ul {
+    margin: -5px;
+    padding: 0px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul > li {
+    padding: 0px 20px;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+nav h1 {
+    font-size: 34px;
+    font-weight: bold;
+    margin-right: 100px;
+    color: white;
+}
+
+nav .btn-get-started{
+    margin: 0px 0px 5px 20px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    border-radius: 25px;
+    background: #3ff309;
+}
+
+nav .btn-get-started:hover{
+    background: blue;
+    color: white;
+}
+
+/* --------------------------------------
+# Home Section
+-----------------------------------------*/
+.home{
+    text-align: center;
+    margin: 0px;
+    padding: 150px 50px;
+    background: url(../img/bg1.jpg);
+    line-height: 10px;
+}
+
+.home h1 {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.home h1 span {
+    color: rgb(0, 153, 255) ;
+}
+
+.home .btn-get-started{
+    margin: 0px 0px 5px 20px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    border-radius: 25px;
+    background: rgb(0, 153, 255);
+}
+
+.home .btn-get-started:hover{
+    background: blue;
+}
+
+/* --------------------------------------
+# Course Section
+-----------------------------------------*/
+.sub-title {
+    margin: 0px;
+    text-align: center;
+    background: rgb(0, 153, 255);
+    border-radius: 20px 20px 0px 0px;
+    padding: 15px 0px;
+    color: white;
+}
+
+.row {
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    margin: 15px;
+    border-radius: 20px 20px 0px 20px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.25), 
+                0 5px 10px rgba(0,0,0,0.22); 
+}
+
+/* --------------------------------------
+# Testi Section
+-----------------------------------------*/
+.testi{
+    margin: 5px 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.user{
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-align: justify;
+    max-width: 250px;
+}
+
+.col p{
+    margin: 0px 5px;
+    padding: 10px;
+    text-align: justify;
+    color: gray;
+}
+
+/* --------------------------------------
+# FAQ Section
+-----------------------------------------*/
+.faq-list{
+    list-style: none;    
+}
+.q{
+    font-size: 18px;
+    line-height: 24px;
+    color: #0d58ba;
+    cursor: pointer;
+}
+
+.faq-list li{
+    border-bottom: 1px solid #d4e5fc;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.faq-list p{
+    margin-bottom: 0;
+    padding: 10px 0 0;
+    padding-left: 25px;
+}
+
+/* --------------------------------------
+# Footer Section
+-----------------------------------------*/
+.footer{
+    margin: 0px;
+    padding: 15px;
+    background: rgb(123, 200, 252);
+}
+
+.footer img{
+    margin: 0px 5px;
+}
+
+.footer p {
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 10px;
+    color: black;
+}
+
+/* --------------------------------------
+# Course Page
+-----------------------------------------*/
+.courses{
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+.avc-title{
+    margin: 0px;
+    padding: 10px;
+    background: gold;
+    border-radius: 10px 0 10px 0;
+    display: inline-block;
+}
+
+.ac-title{
+    margin: 0px;
+    padding: 10px;
+    background: rgb(131, 250, 131);
+    border: 1px solid lightgrey;
+    border-radius: 10px 0 10px 0;
+    display: inline-block;
+}
+
+.ch-title{
+    margin: 50px 0 0;
+    padding: 10px;
+    color: gray;
+    background: rgb(224, 222, 222);
+    border-radius: 10px 0 10px 0;
+    display: inline-block;
+}
+
+.course-box{
+    margin: 30px 0;
+    box-shadow: 1px 3px 8px lightgrey;
+    border-radius: 10px;
+    display: flex;
+}
+
+.course-box img{
+    border-radius: 0 10px 0 10px;
+}
+
+.course-desc{
+    margin: 0 20px;
+}
+
+.course-desc p{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    color: gray;
+}
+
+/* --------------------------------------
+# Group Page
+-----------------------------------------*/
+
+
+/* --------------------------------------
+# Study Report
+-----------------------------------------*/
+table{
+    margin-bottom: 100px;
+    border-collapse: collapse;
+}
+
+th{
+    font-weight: bolder;
+    background: lightskyblue;
+    padding: 10px;
+    border: 1px double black;    
+}
+
+td{
+    padding: 10px;
+    width: 400px;
+    font-size: 14px;
+    font-weight: lighter;
+    border: 0.5px solid black;
+}
+
+.chapter{
+    font-weight: bolder;
+    background: rgb(193, 234, 248);
+}
+
+.nilai{
+    text-align: center;
+}
+
